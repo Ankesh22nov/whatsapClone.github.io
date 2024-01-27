@@ -23,6 +23,7 @@ btns.forEach((Element) => {
 
 
             }else if (Element.id === "status") {
+                statusArea.style.opacity = '1';
                 statusArea.style.left = '0%';
                 contactArea.style.left = '-100%';
                 callArea.style.left = '100%';
@@ -35,6 +36,7 @@ btns.forEach((Element) => {
             }
             
              else if (Element.id === "call") {
+                callArea.style.opacity = '1';
                 statusArea.style.left = '-100%';
                 contactArea.style.left = '-100%';
                 callArea.style.left = '0%';
