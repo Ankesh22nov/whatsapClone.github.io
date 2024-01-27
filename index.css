@@ -1,0 +1,458 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 225, 226);
+    max-height: 100%;
+    font-size: 20px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'48;
+}
+
+.container {
+    border-radius: 3%;
+    background-color: white;
+    position: relative;
+    height: 31em;
+    width: 28em;
+    overflow-y: scroll;
+    margin-top: 4px      
+}
+
+::-webkit-scrollbar {
+    width: 0%;
+}
+
+header {
+    background-color: rgb(15, 105, 63);
+    padding: 3% 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+    padding: 0% 2%;
+
+}
+
+.action span {
+    color: white;
+    font-size: 25px;
+    display: flex;
+    cursor: pointer;
+}
+
+.action {
+    position: relative;
+    display: flex;
+    gap: 15px;
+}
+
+.content .box {
+    position: relative;
+    width: 350px;
+}
+
+.tab {
+   display: flex;
+   justify-content:space-between;
+   /* border-bottom-left-radius: 3%;
+    border-bottom-right-radius: 3%;*/
+    border-bottom: 1px solid black;
+    background-color: rgb(15, 105, 63);
+}
+
+.btn {
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    background: transparent;
+    position: relative;
+    color: white;
+    display: inline;
+    padding: 2% 10%;
+    cursor: pointer;
+    font-size: 18px
+}
+
+.screen {
+    position: relative;
+    display: flex;
+}
+
+.contact_list {
+    height: 100%;
+    width: 100%;
+    margin: 2% 0%;
+    transition: 0.1s
+}
+
+.contact_list ul li {
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    padding: 13px;
+}
+
+.contact_list ul li .profile_section {
+    border-radius: 50px;
+    margin: 0% 5%;
+}
+
+.profile_section img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    border: 2px solid black
+}
+
+.contact_section small {
+    opacity: 0.6;
+}
+
+.time {
+    opacity: .6;
+    position: absolute;
+    right: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.list:hover {
+    background-color: rgba(221, 212, 201, 0.733);
+    cursor: pointer;
+}
+
+.status_area {
+    position: absolute;
+    left: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    transition: .1s;
+}
+
+.status_area ul li:hover {
+    background-color: rgba(221, 212, 201, 0.733);
+    cursor: pointer;
+}
+
+.status_area ul {
+    list-style: none;
+    position: relative;
+}
+
+.status_area ul li {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    padding: 15px;
+}
+
+.my_status {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    margin-right: 5%;
+}
+
+.my_status img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%
+}
+
+.my_status .material-symbols-outlined {
+    position: absolute;
+    font-size: 15px;
+    font-weight: lighter;
+    bottom: 1%;
+    left: 18px;
+    color: rgb(245, 241, 241);
+    background-color: rgb(15, 105, 63);
+    border-radius: 50%
+}
+
+.status_contact h5 {
+    font-size: 16px;
+}
+
+.status_contact p {
+    font-weight: lighter;
+    font-size: 13px;
+    opacity: .7;
+}
+
+.new_added {
+    padding-left: 2%;
+    font-size: 13px;
+    background-color: rgb(230, 221, 210);
+}
+
+.n_status {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    margin-right: 5%;
+    border: 3px solid rgb(15, 105, 63);
+    border-radius: 50%
+}
+
+.n_status img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%
+}
+
+.v_status {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    margin-right: 5%;
+    border: 3px solid rgb(141, 127, 127);
+    border-radius: 50%
+}
+
+.v_status img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%
+}
+
+.call_area {
+    position: absolute;
+    left: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    transition: .1s;
+}
+
+.call_area ul {
+    list-style: none;
+    position: relative;
+}
+
+.call_area ul li {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    padding: 15px;
+}
+
+.call_area ul li:hover {
+    background-color: rgba(221, 212, 201, 0.733);
+    cursor: pointer;
+}
+
+.my_calls {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    margin-right: 5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(15, 105, 63);
+    border-radius: 50%;
+}
+
+
+.my_calls .material-symbols-outlined {
+    color: white;
+    transform: rotate(130deg);
+    position: absolute;
+    font-size: 20px;
+    top: 20%;
+    left: 20%;
+}
+
+.my_calls img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%
+}
+
+.calls_contact h5 {
+    font-size: 15px;
+}
+
+.calls_contact p {
+    font-weight: lighter;
+    font-size: 13px;
+    opacity: .7;
+}
+
+.calls {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    margin-right: 5%;
+    border-radius: 50%
+}
+
+.calls img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover
+}
+
+.contact h5 {
+    font-size: 15px;
+}
+
+.contact p {
+    font-weight: lighter;
+    font-size: 13px;
+    opacity: .7;
+}
+
+.call {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    margin-right: 5%;
+    border: 3px solid rgb(15, 105, 63);
+    border-radius: 50%
+}
+
+.video_icon .material-symbols-outlined {
+    position: absolute;
+    font-size: 18px;
+    font-weight: lighter;
+    color: rgb(15, 105, 63);
+    right: 10%;
+    top: 50%;
+}
+
+.contact .material-symbols-outlined {
+    font-size: 12px;
+    color: rgb(13, 211, 63);
+    font-weight: bold;
+    transform: rotate(180deg)
+}
+.msg_icon{
+    display: flex;
+    justify-content: end;
+}
+.message_icon {
+    margin: 2%;
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(6, 92, 52);
+    color: white;
+    z-index: 1;
+    top: 500px;
+    cursor: pointer;
+    border: none;
+    transition: 0.1s;
+
+}
+.message_icon span{
+    font-size: 20px
+}
+.status_icon{
+    position: fixed;
+    top: 500px;
+    right: 33vw;
+    z-index: 1;
+    transition: 0.1s;
+
+}
+.pencile_camera_icon{
+    background-color: rgb(6, 92, 52);
+    color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 20%;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    flex-direction: column;
+
+}
+.pencile_camera_icon span{
+    position: relative;
+    top: 5%;
+    left: 22%;
+    font-size: 20px;
+}
+.status_btn button{
+   margin-bottom: 15%
+}
+.call_icon button{
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    border-radius: 20%;
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    z-index: 1;
+    top: 500px;
+    right: 33%;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(6, 92, 52);
+    color: white;
+    
+}
+.call_btn span{
+    position: relative;
+    top: 10%;
+    font-size: 20px; 
+}
+
+ @media screen and (max-width: 900px) and (min-width: 700px){
+.status_icon{
+    right: 25vw
+}
+.call_icon button{
+    right: 20%
+}
+  }
+  @media screen and (max-width: 700px) and (min-width: 300px){
+.status_icon{
+    right: 10vw
+}
+.call_icon button{
+    right: 14%
+}
+.message_icon {
+
+}
+  }
+   @media screen and (max-width: 300px) and (min-width: 150px){
+.status_icon{
+    right: 10vw
+}
+.call_icon button{
+    right: 14%
+}
+  }
